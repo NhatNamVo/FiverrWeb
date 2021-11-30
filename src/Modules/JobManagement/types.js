@@ -1,0 +1,68 @@
+
+// get type of main job list
+export const GET_MAIN_JOB_REQUEST = 'GET_MAIN_JOB_REQUEST';
+export const GET_MAIN_JOB_SUCCESS = 'GET_MAIN_JOB_SUCCESS';
+export const GET_MAIN_JOB_FAIL = 'GET_MAIN_JOB_FAIL';
+
+// add new type of main job
+export const ADD_NEW_MAIN_JOB_REQUEST = 'ADD_NEW_MAIN_JOB_REQUEST';
+export const ADD_NEW_MAIN_JOB_SUCCESS = 'ADD_NEW_MAIN_JOB_SUCCESS';
+export const ADD_NEW_MAIN_JOB_FAIL = 'ADD_NEW_MAIN_JOB_FAIL';
+
+// update type of main job
+export const UPDATE_MAIN_JOB_REQUEST = 'UPDATE_MAIN_JOB_REQUEST';
+export const UPDATE_MAIN_JOB_SUCCESS = 'UPDATE_MAIN_JOB_SUCCESS';
+export const UPDATE_MAIN_JOB_FAIL = 'UPDATE_MAIN_JOB_FAIL';
+
+// delete type of main job
+export const DELETE_MAIN_JOB_REQUEST = 'DELETE_MAIN_JOB_REQUEST';
+export const DELETE_MAIN_JOB_SUCCESS = 'DELETE_MAIN_JOB_SUCCESS';
+export const DELETE_MAIN_JOB_FAIL = 'DELETE_MAIN_JOB_FAIL';
+
+// add new sub job type
+export const ADD_NEW_SUB_JOB_REQUEST = 'ADD_NEW_SUB_JOB_REQUEST';
+export const ADD_NEW_SUB_JOB_SUCCESS = 'ADD_NEW_SUB_JOB_SUCCESS';
+export const ADD_NEW_SUB_JOB_FAIL = 'ADD_NEW_SUB_JOB_FAIL';
+
+// update sub job type
+export const UPDATE_SUB_JOB_REQUEST = 'UPDATE_SUB_JOB_REQUEST';
+export const UPDATE_SUB_JOB_SUCCESS = 'UPDATE_SUB_JOB_SUCCESS';
+export const UPDATE_SUB_JOB_FAIL = 'UPDATE_SUB_JOB_FAIL';
+
+// delete sub job type
+export const DELETE_SUB_JOB_REQUEST = 'DELETE_SUB_JOB_REQUEST';
+export const DELETE_SUB_JOB_SUCCESS = 'DELETE_SUB_JOB_SUCCESS';
+export const DELETE_SUB_JOB_FAIL = 'DELETE_SUB_JOB_FAIL';
+
+// main Jobs
+export const GET_JOB_LIST_REQ = 'GET_MAIN_TYPE_JOB_LIST_REQ';
+export const GET_MAIN_TYPE_JOB_LIST_SUCC = 'GET_MAIN_TYPE_JOB_LIST_SUCC';
+export const GET_MAIN_TYPE_JOB_LIST_FAIL = 'GET_MAIN_TYPE_JOB_LIST_FAIL';
+
+// sub Jobs
+export const GET_SUB_TYPE_JOB_LIST_SUCC = 'GET_SUB_TYPE_JOB_LIST_SUCC';
+export const GET_SUB_TYPE_JOB_LIST_FAIL = 'GET_SUB_TYPE_JOB_LIST_FAIL';
+
+// Delete job
+export const DELETE_JOB_REQ = 'DELETE_JOB_REQ';
+export const DELETE_JOB_SUCC = 'DELETE_JOB_SUCC';
+export const DELETE_JOB_FAIL = 'DELETE_JOB_FAIL';
+
+// get job detail
+export const GET_JOB_DETAIL_REQ = 'GET_JOB_DETAIL_REQ';
+export const GET_JOB_DETAIL_SUCC = 'GET_JOB_DETAIL_SUCC';
+export const GET_JOB_DETAIL_FAIL = 'GET_JOB_DETAIL_FAIL';
+
+//update job detail
+export const UPDATE_JOB_DETAIL_REQ = 'UPDATE_JOB_DETAIL_REQ';
+export const UPDATE_JOB_DETAIL_FAIL = 'UPDATE_JOB_DETAIL_FAIL';
+
+// get all job
+export const GET_ALL_JOB_REQ = 'GET_ALL_JOB_REQ';
+export const GET_ALL_JOB_SUCC = 'GET_ALL_JOB_SUCC';
+export const GET_ALL_JOB_FAIL = 'GET_ALL_JOB_FAIL';
+
+// get job for user
+export const GET_JOB_USER_REQ = 'GET_JOB_USER_REQ';
+export const GET_JOB_USER_SUCC = 'GET_JOB_USER_SUCC';
+export const GET_JOB_USER_FAIL = 'GET_JOB_USER_FAIL';

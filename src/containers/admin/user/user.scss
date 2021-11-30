@@ -1,0 +1,143 @@
+.userList {
+  .userList__feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    a {
+      padding: 5px 15px;
+      background-color: #73bfdd;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      &:hover {
+        box-shadow: 0 8px 14px 0 #ccc;
+      }
+    }
+    .ant-input-search {
+      max-width: 350px;
+      .ant-input-affix-wrapper {
+        &:hover,
+        &:focus,
+        &:focus-within {
+          border-color: #ff7070;
+          box-shadow: none;
+        }
+      }
+
+      button {
+        background-color: #ff7070;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+  .clientList{
+    justify-content: flex-end;
+  }
+  .staffList__content {
+    table {
+      .ant-table-thead {
+        th {
+          padding: 10px 5px;
+          text-align: center;
+        }
+      }
+      .ant-table-tbody {
+        td {
+          padding: 10px 15px;
+          &:nth-of-type(1),
+          &:nth-of-type(3),
+          &:nth-of-type(5),
+          &:nth-of-type(6),
+          &:last-of-type {
+            text-align: center;
+          }
+          &:nth-of-type(4) {
+            white-space: nowrap;
+          }
+          .user-avatar{
+            display: inline-block;
+          }
+          .anticon {
+            vertical-align: 1px;
+            font-weight: 700;
+          }
+          .anticon-man {
+            color: #73bfdd;
+          }
+          .anticon-woman,
+          .anticon-delete {
+            color: #ff7070;
+          }
+          .anticon-setting {
+            color: #888;
+            cursor: pointer;
+            &:hover {
+              animation: turnArround 2s linear infinite;
+            }
+          }
+          .anticon-delete {
+            cursor: pointer;
+            &:hover {
+              animation: wave 0.6s ease-out infinite;
+            }
+          }
+          .ant-tag-green{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-popover-inner-content{
+  padding: 10px 12px!important;
+  border-radius: 25px!important;
+  .ant-popover-buttons{
+    text-align: center;
+    button{
+      border-radius: 5px;
+      border: none;
+    }
+    .ant-btn-sm{
+      background-color: #ff7070;
+      color: #fff;
+    }
+    .ant-btn-primary{
+      background-color: #73bfdd;
+    }
+  }
+}
+
+@import "helpers/variables.scss";
+@import "helpers/mixin.scss";
+
+// responsive
+@include maxResponsive("small-down"){
+  .userList{
+    .userList__feature{
+      a {
+        white-space: nowrap;
+        padding: 5px 10px;
+        font-size: 14px;
+      }
+      .ant-input-search {
+        max-width: 220px;
+      }
+    }
+    .clientList{
+      .ant-input-search {
+        max-width: 100%;
+      }
+    }
+  }
+  .ant-popover{
+    left: 260px!important;
+    .ant-popover-arrow{
+      left: 68%!important;
+    }
+  }
+}

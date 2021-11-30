@@ -1,0 +1,171 @@
+.categories {
+  max-width: 1400px;
+  margin: auto;
+  .categories__container {
+    padding: 32px 32px 0;
+  }
+  .categories__header {
+    text-align: center;
+    h4 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #222325;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+  }
+  .categories__content {
+    padding-top: 32px;
+    align-items: flex-start;
+  }
+  .content__sideRight {
+    padding: 0;
+    .sideRight__contentItem {
+      padding-left: 24px;
+      padding-right: 0;
+      overflow: hidden;
+      margin-bottom: 48px;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #222325;
+        font-size: 17px;
+        font-weight: 400;
+        &:hover {
+          span {
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+        span {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          &:after {
+            content: "";
+            position: absolute;
+            background-color: rgba(204, 204, 204, 0.4);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            opacity: 0;
+            transition: opacity 0.2s;
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 5px;
+        }
+        p {
+          margin-top: 3px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .content__sideLeft {
+    font-size: 17px;
+    .anticon-right{
+      display: none;
+    }
+    .sideLeft__listTitle {
+      padding-top: 0;
+      color: #222325;
+      font-weight: 600;
+    }
+    .sideLeft__listItem {
+      padding: 0 16px 12px 0;
+    }
+    a {
+      width: fit-content;
+      display: block;
+      text-decoration: none;
+      color: #7a7d85;
+      font-weight: 400;
+      transition: text-decoration 0.2s;
+      &:hover {
+          text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+// responsive
+@import "helpers/mixin.scss";
+@import "helpers/variables.scss";
+
+@include maxResponsive("extra-large-down") {
+  .categories {
+    .content__sideLeft {
+      display: none;
+    }
+    .content__sideRight {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: -12px;
+      margin-right: 0;
+    }
+  }
+}
+@include maxResponsive("small-down") {
+  .categories {
+    .categories__container {
+      padding: 32px 0 0;
+    }
+    .categories__header {
+      h4 {
+        font-size: 24px;
+        color: #222325;
+      }
+    }
+    .categories__content {
+      padding-top: 0;
+    }
+    .content__sideRight {
+      display: none;
+    }
+    .content__sideLeft {
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
+      font-size: 17px;
+      ul {
+        padding: 24px 16px 32px;
+      }
+      .sideLeft__listItem {
+        padding: 0;
+        &:nth-of-type(1){
+          display: none
+        }
+        &:nth-of-type(2){
+          a{
+            border-top: none;
+          }
+        }
+        .anticon-right{
+          display: inline-block;
+        }
+        &:hover {
+          a {
+            text-decoration: none!important;
+          }
+        }
+      }
+      a {
+        padding: 16px 0;
+        border-top: 1px solid #dadbdd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        color: #222325;
+        width: 100%;
+      }
+    }
+  }
+}

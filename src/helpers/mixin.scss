@@ -1,0 +1,35 @@
+
+@mixin maxResponsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "màn hình chưa khai báo";
+    }
+}
+@mixin minResponsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (min-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "màn hình chưa khai báo";
+    }
+}
+@mixin tablet { @media (min-width: #{768px}) and (max-width: #{992px }) {       
+    @content;   
+  } 
+ }
+//carousel
+ @mixin herobackground($url) {
+    background-image: url($url);
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
