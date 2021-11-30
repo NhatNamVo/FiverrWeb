@@ -7,6 +7,14 @@ This project is cloned design from https://www.fiverr.com/. Additionally, admin 
 
 This project is used to present freelancer for project manager, project development oganization with all categories such as design graphics, digital marketing, lifeStyle, Programing... via buy-sell form. Seller is freelancers that find jobs and Buyer is personals or organizations that find talent freelancers suitable for their projects.
 
+Fiverr App is developed by:
+- ReactJs
+- HTML5
+- SCSS, SASS
+- Javascript ES6
+- Redux tool kit Thunk
+- Restfull API
+
 ## Prerequisites
 
 Before you continue, ensure you meet the following requirements:
