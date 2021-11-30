@@ -38,5 +38,5 @@ You will also see any lint errors in the console.
 Use account admin bellow:
   - email: namVo@gmail.com
   - password: 123456
-* Thank for your watching. Hope you enjoy this project.
-* Thank you
+### Thank for your watching. Hope you enjoy this project.
+### Thank you
