@@ -36,7 +36,7 @@ You will also see any lint errors in the console.
 ## How to login to admin component
 
 Use account admin bellow:
-  email: namVo@gmail.com
-  password: 123456
+  - email: namVo@gmail.com
+  - password: 123456
 * Thank for your watching. Hope you enjoy this project.
 * Thank you
