@@ -14,7 +14,7 @@ Fiverr App is developed by:
 - Javascript ES6
 - Redux tool kit Thunk
 - Restfull API
-
+- WireFrame via Balsamiq
 ## Prerequisites
 
 Before you continue, ensure you meet the following requirements:
