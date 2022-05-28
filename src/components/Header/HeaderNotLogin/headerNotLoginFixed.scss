@@ -93,7 +93,7 @@ header {
 }
 
 /* category */
-#category__content {
+#category__content, .cagetories__menu, #category__content-loggedin {
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -107,15 +107,21 @@ header {
   text-align: center;
   font-size: 16px;
   font-weight: bolder;
+  &>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   .li-cate {
     position: relative;
+    white-space: nowrap;
     .category__hover {
       display: none;
       background: white;
       box-shadow: 0 0 2px 1px #999999;
       column-count: 3;
       position: absolute;
-      top: 20px;
+      top: 35px;
       right: 0;
       padding: 20px 30px;
       column-gap: 30px;

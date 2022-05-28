@@ -34,7 +34,6 @@ export default function Carousel() {
     if (value !== "") {
       setTimeout(() => {
         messageConfig.success();
-
         history.push(`/search/gigs/${value}`);
       }, 0);
     }
